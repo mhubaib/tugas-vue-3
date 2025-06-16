@@ -71,6 +71,10 @@ export default {
       }, 0);
     }
   },
+  created() {
+    // Load initial cart data if needed
+    alert('Selamat datang di aplikasi keranjang belanja!');
+  },
   methods: {
     addProduct(product) {
       this.cart.push(product);
@@ -233,8 +237,6 @@ export default {
 }
 
 .empty-cart {
-  display: grid;
-  grid-template-columns: 1fr;
   text-align: center;
   background: #ffffff;
   border: 1px solid #e5e7eb;
